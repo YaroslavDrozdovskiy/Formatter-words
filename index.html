@@ -30,8 +30,17 @@
             placeholder="Введите текст..."
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-outline-success" id='submit'>Преобразовать</button>
-        <button type="button" class="btn btn-outline-warning" id='copy'>Скопировать текст</button>
+        <div class="btn-group d-flex p-2" role="group" aria-label="Basic example">
+          <button type="submit" class="btn btn-success m-2" id="submit">
+            Преобразовать
+          </button>
+          <button type="button" class="btn btn-warning m-2" id="copy">
+            Скопировать текст
+          </button>
+          <button type="button" class="btn btn-danger m-2" id="clear">
+            Отчистить поле
+          </button>
+        </div>
       </form>
     </div>
     <script src="formatter.js"></script>

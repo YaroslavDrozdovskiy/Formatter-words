@@ -1,5 +1,7 @@
 const button_sub = document.querySelector("#submit");
 const button_copy = document.querySelector("#copy");
+const button_clear = document.querySelector("#clear");
+
 const textarea = document.querySelector("textarea");
 
 button_sub.onclick = function(e) {
@@ -10,16 +12,17 @@ button_sub.onclick = function(e) {
 };
 
 button_copy.addEventListener("click", function(e) {
-  e.preventDefault();
-  let range = new Range();
-  range.selectNode(textarea);
-  window.getSelection().addRange(range);
-  //пытаемся скопировать текст в буфер обмена
+  textarea.select();
   try {
     document.execCommand("copy");
   } catch (err) {
     console.log("Can`t copy, boss");
   }
-  //очистим выделение текста, чтобы пользователь "не парился"
+  //   очистим выделение текста, чтобы пользователь "не парился"
   document.getSelection().removeAllRanges();
+  alert("Ваш текст скопирован в буфер обмена!");
+});
+
+button_clear.addEventListener("click", function(e) {
+  textarea.value = "";
 });
