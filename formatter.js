@@ -30,6 +30,7 @@ button_clear.addEventListener("click", function(e) {
     document.execCommand("copy");
   } catch (err) {
     alert("Ошибка при копировании. Повторите попытку");
+    return "Error"
   }
   //   очистим выделение текста, чтобы пользователь "не парился"
   document.getSelection().removeAllRanges();
