@@ -7,7 +7,7 @@ const textarea = document.querySelector("textarea");
 button_sub.onclick = function(e) {
   e.preventDefault();
   text = textarea.value;
-  text = text.split(/[\n\s]+/)
+  text = text.split(/[\n\s]+/);
   console.log("%O", text);
   textarea.value = text.join(" ");
 };
@@ -25,5 +25,13 @@ button_copy.addEventListener("click", function(e) {
 });
 
 button_clear.addEventListener("click", function(e) {
+  textarea.select();
+  try {
+    document.execCommand("copy");
+  } catch (err) {
+    console.log("Can`t copy, boss");
+  }
+  //   очистим выделение текста, чтобы пользователь "не парился"
+  document.getSelection().removeAllRanges();
   textarea.value = "";
 });
