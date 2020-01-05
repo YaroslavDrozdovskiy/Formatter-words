@@ -1,4 +1,4 @@
-const button_sub = document.querySelector("#submit");
+const button_sub = document.querySelector("#convert");
 const button_copy = document.querySelector("#copy");
 const button_clear = document.querySelector("#clear");
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ForMatter v1.10</title>
+    <title>ForMatter v1.20</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -16,9 +16,8 @@
   </head>
   <body>
     <div class="container d-flex flex-column justify-content-center">
-      <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Обновление: </strong>добавлена функция удаления лишних пробелов
-        в тексте!
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Обновление: </strong>добавлена неоновая тема
         <button
           type="button"
           class="close"
@@ -32,9 +31,9 @@
         <div class="form-group">
           <label
             for="exampleFormControlTextarea1"
-            class="text-success"
+            class="headtext mb-3"
             style="font-size: 2.5rem; font-weight: bolder;"
-            >Форматирует текст, удаляя лишние отступы</label
+            >Formatter v1.20</label
           >
           <textarea
             class="form-control"
@@ -44,17 +43,26 @@
           ></textarea>
         </div>
         <div
-          class="btn-group d-flex p-2"
+          class="btn-group d-flex justify-content-between "
           role="group"
           aria-label="Basic example"
         >
-          <button type="submit" class="btn btn-success m-2" id="submit">
+          <!-- <button type="submit" class="btn btn-success m-2" id="submit">
             Преобразовать
           </button>
           <button type="button" class="btn btn-warning m-2" id="copy">
             Скопировать текст
           </button>
           <button type="button" class="btn btn-danger m-2" id="clear">
+            Отчистить поле
+          </button> -->
+          <button class="btn glow-on-hover" id="convert"  type="button">
+            Преобразовать
+          </button>
+          <button class="btn glow-on-hover mr-2 ml-2" id="copy" type="button">
+            Скопировать текст
+          </button>
+          <button class="btn glow-on-hover " id="clear" type="button">
             Отчистить поле
           </button>
         </div>
