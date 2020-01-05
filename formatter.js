@@ -17,7 +17,7 @@ button_copy.addEventListener("click", function(e) {
   try {
     document.execCommand("copy");
   } catch (err) {
-    console.log("Can`t copy, boss");
+    alert("Ошибка при копировании. Повторите попытку");
   }
   //   очистим выделение текста, чтобы пользователь "не парился"
   document.getSelection().removeAllRanges();
@@ -29,7 +29,7 @@ button_clear.addEventListener("click", function(e) {
   try {
     document.execCommand("copy");
   } catch (err) {
-    console.log("Can`t copy, boss");
+    alert("Ошибка при копировании. Повторите попытку");
   }
   //   очистим выделение текста, чтобы пользователь "не парился"
   document.getSelection().removeAllRanges();
