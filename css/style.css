@@ -12,14 +12,19 @@ body {
   background-repeat: no-repeat;
 }
 #exampleFormControlTextarea1 {
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.6);
   border-color: #ff00c8;
-  color:#ffffff;
+  color: #ffffff;
+  letter-spacing: 0.05rem;
+  /* text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 40px #ffff00, 0 0 80px #ffff00, 0 0 90px #ffff00, 0 0 100px #ffff00,
+    0 0 150px #ffff00; */
 }
-#exampleFormControlTextarea1::placeholder{
-  color: #ff00c8;
-
+#exampleFormControlTextarea1::placeholder {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+    0 0 40px #ffff00, 0 0 80px #ffff00, 0 0 90px #ffff00, 0 0 100px #ffff00,
+    0 0 150px #ffff00;
 }
 
 .headtext {
@@ -99,7 +104,7 @@ body {
   border-radius: 10px;
 }
 
-#convert {
+/* #convert {
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
     0 0 40px #0000ff, 0 0 80px #0000ff, 0 0 90px #0000ff, 0 0 100px #0000ff,
     0 0 150px #0000ff;
@@ -113,7 +118,7 @@ body {
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
     0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 90px #ff0000, 0 0 100px #ff0000,
     0 0 150px #ff0000;
-}
+} */
 
 @keyframes glowing {
   0% {
