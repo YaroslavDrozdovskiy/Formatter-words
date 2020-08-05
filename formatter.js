@@ -26,12 +26,12 @@ button_copy.addEventListener("click", function(e) {
 
 button_clear.addEventListener("click", function(e) {
   textarea.select();
-  try {
-    document.execCommand("copy");
-  } catch (err) {
-    alert("Ошибка при копировании. Повторите попытку");
-    return "Error"
-  }
+//   try {
+//     document.execCommand("copy");
+//   } catch (err) {
+//     alert("Ошибка при копировании. Повторите попытку");
+//     return "Error"
+//   }
   //   очистим выделение текста, чтобы пользователь "не парился"
   document.getSelection().removeAllRanges();
   textarea.value = "";
