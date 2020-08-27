@@ -32,7 +32,7 @@ button_clear.addEventListener("click", function(e) {
     alert("Ошибка при копировании. Повторите попытку");
     return "Error"
   }
-    очистим выделение текста, чтобы пользователь "не парился"
+    //очистим выделение текста, чтобы пользователь "не парился"
   document.getSelection().removeAllRanges();
   textarea.value = "";
 });
